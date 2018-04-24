@@ -64,9 +64,9 @@
 
 
 (defn home-page []
-  [:div {:style {:width            "100%"
-                 :display          :flex
-                 :justify-content  :center}}
+  [:div {:style {:width           "100%"
+                 :display         :flex
+                 :justify-content :center}}
    [:div {:style {:display        :flex
                   :flex-direction :column}}
     [:div "Current player: " (-> @app-state :current-user)]
@@ -78,20 +78,20 @@
                            ^{:key idx}
                            [:div {:on-click (fn [event]
                                               (swap! app-state (partial user-toggles idx)))
-                                  :style    {:height          em-size
-                                             :width           em-size
-                                             :border          "1px solid black"
-                                             :display         :flex
-                                             :justify-content :center
-                                             :align-items     :center
-                                             :-moz-user-select :none
+                                  :style    {:height              em-size
+                                             :width               em-size
+                                             :border              "1px solid black"
+                                             :display             :flex
+                                             :justify-content     :center
+                                             :align-items         :center
+                                             :-moz-user-select    :none
                                              :-webkit-user-select :none
-                                             :-ms-user-select :none
-                                             :user-select     :none
-                                             :color           (case cell
-                                                                " " :black
-                                                                "0" :red
-                                                                "X" :blue)}}
+                                             :-ms-user-select     :none
+                                             :user-select         :none
+                                             :color               (case cell
+                                                                    " " :black
+                                                                    "0" :red
+                                                                    "X" :blue)}}
                             [:b cell]])))
           (partition 3)
           (map-indexed (fn [idx three-cells]
