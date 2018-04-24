@@ -84,6 +84,9 @@
                                              :display         :flex
                                              :justify-content :center
                                              :align-items     :center
+                                             :-moz-user-select :none
+                                             :-webkit-user-select :none
+                                             :-ms-user-select :none
                                              :user-select     :none
                                              :color           (case cell
                                                                 " " :black
