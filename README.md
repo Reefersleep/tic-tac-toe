@@ -1,6 +1,6 @@
 ### Tic tac toe in Clojurescript!
 
-Running app at https://hungry-nobel-23ee76.netlify.com/
+Running app at https://reagent-tic-tac-toe.netlify.com/
 
 This little demo was inspired by the "ReasonDojo - Learn ReasonML by Making Things" on April 23, 1028, where we were tasked to do the same thing, only in ReasonReact :)
 
